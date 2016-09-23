@@ -39,7 +39,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Info\Command.cs" />
+    <Compile Include="Info\Response.cs" />
+    <Compile Include="Log\Command.cs" />
+    <Compile Include="Log\Response.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SCM.cs" />
+    <Compile Include="Update\Command.cs" />
+    <Compile Include="Update\Response.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\InfraStructure\InfraStructure.csproj">
+      <Project>{09E35175-28BC-46E1-B024-8896E801A0B3}</Project>
+      <Name>InfraStructure</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
